@@ -1,11 +1,11 @@
 let connection = require("./connection");
 
-exports.selectAll = () => {
+exports.selectAll = (cb) => {
   connection.query(
     "SELECT id, burger_name, devoured from burgers",
     (err, res) => {
       if (err) throw err;
-      return res;
+      cb(res);
     }
   );
 };

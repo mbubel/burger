@@ -4,8 +4,8 @@ exports.createBurger = (burgerName) => {
   orm.insertOne(burgerName);
 };
 
-exports.findAll = () => {
-  return orm.selectAll();
+exports.findAll = (cb) => {
+  orm.selectAll(cb);
 };
 
 exports.devour = (id) => {
