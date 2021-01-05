@@ -1,5 +1,17 @@
 <h1>Eat-Da-Burger!</h1>
 
 {{#each burgers}}
-<h2>{{burger_name}}</h2>
-{{/each}}
+<h2><textarea id="burger-list">{{id}}. {{burger_name}}</textarea>
+<button id="devour-button">Devour</button></h2>
+
+{{/each}}  
+
+ 
+<div class="submit">
+   <textarea id="new-burger"></textarea>
+<br><button id="submit-button">Submit</button> 
+</div>
+
+<div id="text"><h3>Enter a burger you want to eat. Click the, "Submit" button.</h3>
+    
+</div>
