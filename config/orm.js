@@ -21,13 +21,13 @@ exports.insertOne = (burgerName) => {
   );
 };
 
-exports.updateOne = (id) => {
+exports.updateOne = (id, cb) => {
   connection.query(
     "UPDATE burgers SET devoured = true WHERE id = ?",
     [id],
     (err, res) => {
       if (err) throw err;
-      return res;
+      cb(res);
     }
   );
 };

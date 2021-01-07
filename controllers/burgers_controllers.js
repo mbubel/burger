@@ -1,7 +1,5 @@
 const express = require("express");
-const burgers = require("../models/burger");
 const router = express.Router();
-
 const burger = require("../models/burger");
 
 // Create all our routes and set up logic within those routes where required.
@@ -11,6 +9,16 @@ router.get("/index", (req, res) => {
       burgers: data,
     };
     res.render("index", hbsObject);
+  });
+});
+
+router.patch("/api/burgers/:id", function (req, res) {
+  burger.devour(req.params.id, (result) => {
+    if (result.changedRows == 0) {
+      return res.status(404).end();
+    } else {
+      res.status(200).end();
+    }
   });
 });
 

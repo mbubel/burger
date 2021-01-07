@@ -1,17 +1,36 @@
-<h1>Eat-Da-Burger!</h1>
-
+<h1>
+  Eat-Da-Burger!
+</h1>
 {{#each burgers}}
-<h2><textarea id="burger-list">{{id}}. {{burger_name}}</textarea>
-<button id="devour-button">Devour</button></h2>
-
-{{/each}}  
-
- 
+  {{#unless devoured}}
+    <h2>
+      <textarea class="burger-list">
+        {{id}}. {{burger_name}}
+      </textarea>
+      <button class="devour" data-id="{{id}}">
+        Devour it!
+      </button>
+    </h2>
+  {{/unless}}
+{{/each}}
+{{#each burgers}}
+  {{#if devoured}}
+    <h2>
+      <textarea disabled="true" class="devoured-burger-list">
+        {{id}}. {{burger_name}}
+      </textarea>
+    </h2>
+  {{/if}}
+{{/each}}
 <div class="submit">
-   <textarea id="new-burger"></textarea>
-<br><button id="submit-button">Submit</button> 
+  <textarea id="new-burger"></textarea>
+  <br />
+  <button id="submit-button">
+    Submit
+  </button>
 </div>
-
-<div id="text"><h3>Enter a burger you want to eat. Click the, "Submit" button.</h3>
-    
+<div id="text">
+  <h3>
+    Enter a burger you want to eat. Click the, "Submit" button.
+  </h3>
 </div>

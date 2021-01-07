@@ -8,6 +8,6 @@ exports.findAll = (cb) => {
   orm.selectAll(cb);
 };
 
-exports.devour = (id) => {
-  return orm.updateOne(id);
+exports.devour = (id, cb) => {
+  orm.updateOne(id, cb);
 };

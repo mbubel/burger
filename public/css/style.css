@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+  color: red;
+}
+
+.burger-list {
+  resize: none;
+  padding-right: 5%;
+  text-align: center;
+}
+.devoured-burger-list {
+  resize: none;
+  padding-right: 5%;
+  text-align: center;
+  margin-left: 70%;
+}
+
+body {
+  background-color: rgb(184, 162, 121);
+  max-width: 500px;
+  margin: auto;
+}
+
+.submit {
+  margin-left: 30%;
+}
+
+#submit-button {
+  margin-left: 18%;
+}
+
