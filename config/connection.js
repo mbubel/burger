@@ -2,11 +2,11 @@
 let mysql = require("mysql");
 
 let connection = mysql.createConnection({
-  host: "localhost",
+  host: process.env.DATABASE_HOST || "localhost",
   port: 3306,
-  user: "root",
-  password: "blinkM123",
-  database: "burgers_db"
+  user: process.env.DATABASE_USER || "root",
+  password: process.env.DATABASE_PASSWORD || "blinkM123",
+  database: process.env.DATABASE || "burgers_db"
 });
 
 // Make connection.
