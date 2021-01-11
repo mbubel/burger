@@ -14,7 +14,7 @@ This project will allow users to submit burger names and devour it!
 * [Questions](#QUESTIONS)
 
 # USAGE:
-You can use this project to conveniently create a unique burger name, and devour said burger.
+You can use this project to conveniently submit burgers, and devour said burgers.
 
  # CONTRIBUTION:
 Fork the repo and put in a pull request.
