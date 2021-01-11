@@ -1,7 +1,7 @@
 const orm = require("../config/orm");
 
-exports.createBurger = (burgerName) => {
-  orm.insertOne(burgerName);
+exports.createBurger = (burgerName, cb) => {
+  orm.insertOne(burgerName, cb);
 };
 
 exports.findAll = (cb) => {

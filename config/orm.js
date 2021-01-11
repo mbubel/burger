@@ -10,13 +10,13 @@ exports.selectAll = (cb) => {
   );
 };
 
-exports.insertOne = (burgerName) => {
+exports.insertOne = (burgerName, cb) => {
   connection.query(
     "INSERT INTO burgers (burger_name) VALUES (?)",
     [burgerName],
     (err, res) => {
       if (err) throw err;
-      return res;
+      cb(res);
     }
   );
 };
