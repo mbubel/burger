@@ -1,10 +1,8 @@
 # TITLE:
-Employee Tracker
+Eat-Da-Burger!
 
 # DESCRIPTION:
-This project will allow a user to add departments, roles, and employees to their rosters. 
-The user will also be able to edit the employee role accordingly and set salaries.
-It will also allow the user to edit employee roles.
+This project will allow users to submit burger names and devour it!
 
 # TABLE OF CONTENTS:
 * [Title](#TITLE)
@@ -16,21 +14,13 @@ It will also allow the user to edit employee roles.
 * [Questions](#QUESTIONS)
 
 # USAGE:
-You can use this project to conveniently create a team.
+You can use this project to conveniently create a unique burger name, and devour said burger.
 
  # CONTRIBUTION:
 Fork the repo and put in a pull request.
 
 # TEST:
-![Employee Screenshot](/assets/employee-tracker.png?raw=true "Employee Roster")
-
-Attached is a link for a video tutorial showing functionality.
-Adding departments, roles, employees, and setting salaries. <br>
-https://www.awesomescreenshot.com/video/2236482
-
-Editing employee roles.<br>
-https://www.awesomescreenshot.com/video/2236506?key=e200519b6bbd290421dc5f3748858f1e
-
+Deployed on Heroku: https://eatin-all-da-burgers.herokuapp.com/
 
 
 # LICENSE:
